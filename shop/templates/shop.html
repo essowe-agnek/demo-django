@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma boutique</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center mt-3">Bienvenue sur ma boutique</h3>
+        
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>T-shirt</h5>
+          </div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur magnam obcaecati, corporis fugit eligendi voluptatibus, a numquam cupiditate quis voluptatem quae delectus asperiores ex!
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>bracelets</h5>
+          </div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur magnam obcaecati, corporis fugit eligendi voluptatibus, a numquam cupiditate quis voluptatem quae delectus asperiores ex!
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h5>pagnes</h5>
+          </div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur magnam obcaecati, corporis fugit eligendi voluptatibus, a numquam cupiditate quis voluptatem quae delectus asperiores ex!
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="card">
+          <div class="card-header">
+            Enregistrement produit
+          </div>
+          <div class="card-body">
+            <form action="" method="post">
+              {% csrf_token %}
+              <div class="col-12 form-group">
+                <label for="">Nom produit</label>
+                <div class="input-group">
+                  <input type="text" name="product_name" class="form-control" required>
+                </div>
+              </div>
+              <button class="btn btn-primary pull-right">Enregistrer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>
